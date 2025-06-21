@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Mark Entry</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    form, table { margin-top: 20px; }
+    input, select { padding: 5px; margin: 5px; }
+    table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h2>Student Mark Entry Form</h2>
+  <form id="markForm">
+    <input type="text" id="studentName" placeholder="Student Name" required />
+    <input type="text" id="subject" placeholder="Subject" required />
+    <input type="number" id="marks" placeholder="Marks" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Submitted Entries:</h3>
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
